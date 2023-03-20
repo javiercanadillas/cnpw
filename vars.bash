@@ -11,5 +11,8 @@ declare -x AE_REGION=europe-west1
 declare -x WRITER_URL
 WRITER_URL="$(gcloud run services describe metrics-writer --format='value(status.url)' 2> /dev/null)"
 
+# set the working directory
+declare -x WORKDIR="$HOME/cnpw"
+
 # set the Cloud Run (fully managed) region
 gcloud config set run/region $REGION
