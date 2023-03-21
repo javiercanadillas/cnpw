@@ -7,8 +7,8 @@ declare -x AE_REGION=europe-west
 
 # set the metrics-writer URL, ignoring if not present
 get_writer_url() {
-  declare -x WRITER_URL
   WRITER_URL="$(gcloud run services describe metrics-writer --format='value(status.url)' 2> /dev/null)"
+  export WRITER_URL
 }
 # set the working directory
 declare -x WORKDIR="$HOME/cnpw"
