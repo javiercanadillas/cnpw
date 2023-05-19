@@ -16,7 +16,7 @@ declare -x WORKDIR="$HOME/cnpw"
 
 # Set the source images to use
 declare -x MW_IMG="europe-southwest1-docker.pkg.dev/javiercm-main-dev/public/metrics-writer:latest"
-declare -x V_IMG="europe-southwest1-docker.pkg.dev/javiercm-main-dev/public/visualizer:latest "
+declare -x V_IMG="europe-southwest1-docker.pkg.dev/javiercm-main-dev/public/visualizer:latest"
 
 # set the Cloud Run (fully managed) region
 echo "Setting Cloud Run region to $REGION..."
