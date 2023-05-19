@@ -4,6 +4,7 @@
 
 # Set up 
 declare -x AE_REGION="europe-west"
+declare -x FS_LOCATION="eur3"
 
 # set the metrics-writer URL, ignoring if not present
 get_writer_url() {
